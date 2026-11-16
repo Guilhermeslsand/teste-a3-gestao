@@ -1,6 +1,8 @@
 import type { UsuarioLogin, DadosCadastroUsuario, Usuario} from '../types/usuario';
 
-const BASE_URL = 'http://localhost:8081/vitalsenior/usuario'; 
+// const BASE_URL = 'http://localhost:8081/vitalsenior/usuario';
+const BASE_URL = 'https:/api-api-a3-gestao.duckdns.org/vitalsenior/usuario';
+
 
 export async function loginUsuario(dados: UsuarioLogin) {
     const response = await fetch(`${BASE_URL}/login`, {

@@ -1,6 +1,9 @@
 import type { DadosCadastroAula, DadosListagemAula } from '../types/aula';
 
-const BASE_URL = 'http://localhost:8081/vitalsenior/aulas';
+// const BASE_URL = 'http://localhost:8081/vitalsenior/aulas';
+const BASE_URL = 'https:/api-api-a3-gestao.duckdns.org/vitalsenior/aulas';
+
+
 
 export async function cadastrarAula(dados: DadosCadastroAula): Promise<DadosListagemAula> {
     const response = await fetch(`${BASE_URL}`, {

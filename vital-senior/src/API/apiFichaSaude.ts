@@ -1,6 +1,8 @@
 import type { DadosCadastroFichaSaude } from '../types/fichaSaude';
 
-const BASE_URL = 'http://localhost:8081/vitalsenior/fichasaude';
+// const BASE_URL = 'http://localhost:8081/vitalsenior/fichasaude';
+const BASE_URL = 'https:/api-api-a3-gestao.duckdns.org/vitalsenior/fichasaude';
+
 
 export async function cadastrarFichaSaude(dados: DadosCadastroFichaSaude): Promise<DadosCadastroFichaSaude> {
     const response = await fetch(`${BASE_URL}`, {

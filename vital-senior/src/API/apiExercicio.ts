@@ -1,6 +1,8 @@
 import type { DadosCadastroExercicio, DadosListagemExercicio } from '../types/exercicio';
 
-const BASE_URL = 'http://localhost:8081/vitalsenior/exercicios';
+// const BASE_URL = 'http://localhost:8081/vitalsenior/exercicios';
+const BASE_URL = 'https:/api-api-a3-gestao.duckdns.org/vitalsenior/exercicios';
+
 
 export async function cadastrarExercicio(dados: DadosCadastroExercicio): Promise<DadosListagemExercicio> {
     const response = await fetch(`${BASE_URL}`, {

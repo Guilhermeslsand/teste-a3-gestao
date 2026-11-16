@@ -1,6 +1,8 @@
 import type { DadosCadastroLocal, DadosListagemLocal } from '../types/local';
 
-const BASE_URL = 'http://localhost:8081/vitalsenior/locais';
+// const BASE_URL = 'http://localhost:8081/vitalsenior/locais';
+const BASE_URL = 'https:/api-api-a3-gestao.duckdns.org/vitalsenior/locais';
+
 
 export async function cadastrarLocal(dados: DadosCadastroLocal): Promise<DadosListagemLocal> {
     const response = await fetch(`${BASE_URL}`, {

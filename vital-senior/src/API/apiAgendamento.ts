@@ -1,6 +1,7 @@
 import type { DadosCadastroAgendamento, DadosListagemAgendamento } from '../types/agendamento';
 
-const BASE_URL = 'http://localhost:8081/vitalsenior/agendamentos';
+// const BASE_URL = 'http://localhost:8081/vitalsenior/agendamentos';
+const BASE_URL = 'https:/api-api-a3-gestao.duckdns.org/vitalsenior/agendamentos';
 
 export async function cadastrarAgendamento(dados: DadosCadastroAgendamento): Promise<DadosListagemAgendamento> {
     const response = await fetch(`${BASE_URL}`, {
