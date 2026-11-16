@@ -3,6 +3,7 @@
 set -euo pipefail
 
 APP_DIR="/opt/vitalsenior"
+BACK_DIR="/opt/vitalsenior/demo"
 BRANCH="${1:-main}"
 
 echo "===================================="
@@ -25,6 +26,8 @@ git fetch origin "$BRANCH"
 
 # Atualizar a branch local
 git checkout -B "$BRANCH" "origin/$BRANCH"
+
+cd "$BACK_DIR"
 
 # Subir ou atualizar containers
 echo "[2/3] Atualizando Docker Compose..."
